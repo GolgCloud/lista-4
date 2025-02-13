@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Você é assinante de um serviço de streaming? (sim/não): ");
+        string eAssinante = Console.ReadLine().ToLower();
+
+        Console.Write("Você já assistiu à série específica? (sim/não): ");
+        string assistiuSerie = Console.ReadLine().ToLower();
+
+        if (eAssinante == "sim" && assistiuSerie == "sim")
+        {
+            Console.WriteLine("Ótimo, agora você pode assistir à nova temporada!");
+        }
+        else
+        {
+            Console.WriteLine("Você não pode assistir à nova temporada ainda.");
+        }
+    }
+}
