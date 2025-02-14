@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Você deseja comprar o produto? (sim/s): ");
+        string resposta = Console.ReadLine().ToLower(); // Lê a resposta e converte para minúsculas para facilitar a comparação
+
+        if (resposta == "sim" || resposta == "s")
+        {
+            Console.WriteLine("Obrigado pela compra!");
+        }
+        else
+        {
+            Console.WriteLine("Você não comprou o produto.");
+        }
+    }
+}
