@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite seu nome: ");
+        string nome = Console.ReadLine();
+
+        if (nome == "Wilson" || nome == "Gloria")
+        {
+            Console.WriteLine("Olá, bem-vindo(a) de volta!");
+        }
+        else
+        {
+            Console.WriteLine("Olá, " + nome + "!");
+        }
+    }
+}
